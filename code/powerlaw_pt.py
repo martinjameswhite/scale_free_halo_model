@@ -136,7 +136,7 @@ if __name__ == "__main__":
               f" {P11_res[i]:15.6e} {P1loop_res[i]:15.6e}"+\
               f" {ratio[i]:15.6e}")
     #
-    # Now work out what value of k/knl leads to P1loop/Ptree=50%.
+    # Now work out what value of k/knl leads to P1loop/Ptree=thresh.
     thresh,ks = 0.10,np.geomspace(1e-4,1e1,1501)
     print("#")
     print(f"# |P1loop|/Ptree={thresh} for k/knl of:",flush=True)
